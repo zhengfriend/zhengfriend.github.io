@@ -17,10 +17,10 @@ menu:
   时间轴: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  清单||fa fa-heartbeat:
+  娱乐||fa fa-heartbeat:
     音乐: /music/ || fas fa-music
-    照片: /Gallery/ || fas fa-images
-    电影: /movies/ || fas fa-video
+    图库: /Gallery/ || fas fa-images
+    视频: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
   
@@ -48,8 +48,18 @@ copy:
 # formal:
 #   icon: link || the description
 social:
+  fab fa-qq: /img/qqqrcode.jpg || QQ
+  fab fa-weixin: /img/weixinqrcode.jpg || weixin
   fab fa-github: https://github.com/zhengfriend || Github
-  fas fa-envelope: mailto:zynmxk@gmail.com || Email
+  fas fa-envelope: mailto:zynmxk@sina.com || Email
+
+#  fab fa-qq: https://zhengfriend.github.io/img/qqqrcode.jpg || qq
+#  fab fa-weibo: https://weibo.com/yourname || weibo
+#  fab fa-google: https://plus.google.com/yurname || google
+#  fab fa-twitter: https://twitter.com/yurname || twitter
+#  fab fa-facebook: https://www.facebook.com/yurname || facebook
+#  fab fa-vk: https://vk.comyurname || vk
+#  fab fa-stackoverflow: https://vk.comyurname || vk
 
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
