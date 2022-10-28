@@ -21,9 +21,9 @@ menu:
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
   娱乐||fa fa-heartbeat:
-    音乐: /music/ || fas fa-music
+#    音乐: /music/ || fas fa-music
     图库: /Gallery/ || fas fa-images
-    视频: /movies/ || fas fa-video
+#    视频: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
   
@@ -65,6 +65,7 @@ social:
 #  fab fa-vk: https://vk.comyurname || vk
 #  fab fa-stackoverflow: https://vk.comyurname || vk
 
+# TODO：搜索系统，需要单独配置
 # search (搜索)
 # see https://butterfly.js.org/posts/ceeb73f/#搜索系統
 # --------------------------------------
@@ -75,6 +76,7 @@ algolia_search:
   hits:
     per_page: 6
 
+# 本地搜索
 # Local search
 local_search:
   enable: false
@@ -293,6 +295,7 @@ noticeOutdate:
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
 
+# 分享，需要对接外部服务商
 # Share System (分享功能)
 # --------------------------------------
 
@@ -314,18 +317,19 @@ addtoany:
   enable: false
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
+# 评论系统,TODO:评论系统需要对接外部系统
 # Comments System
 # --------------------------------------
 
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: # Valine,Disqus
+  use: Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
-  count: false # Display comment count in post's top_img
+  lazyload: true
+  count: true # Display comment count in post's top_img
   card_post_count: false # Display comment count in Home Page
 
 # disqus
@@ -432,6 +436,8 @@ artalk:
 # Chat Services
 # --------------------------------------
 
+# 在线聊天
+# TODO:在线聊天需要对接外部系统，推荐使用 crisp
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
 chat_btn: false
@@ -485,7 +491,7 @@ footer:
     # 博客年份
     since: 2022
   #页脚自定义文本
-  custom_text: I wish you to become your own sun, no need to rely on who's light.
+  custom_text: There is a crack in everything，that's how the light gets in.
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -511,15 +517,17 @@ cloudflare_analytics:
 # https://clarity.microsoft.com/
 microsoft_clarity:
 
+# 广告
 # Advertisement
 # --------------------------------------
 
+# 谷歌广告
 # Google Adsense (谷歌廣告)
 google_adsense:
   enable: false
   auto_ads: true
   js: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
-  client:
+  client: #个人识别码
   enable_page_level_ads: true
 
 # Insert ads manually (手動插入廣告)
@@ -583,7 +591,7 @@ background:
 footer_bg: false
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
-rightside-bottom:
+rightside-bottom: 5px
 
 # Enter transitions (開啓網頁進入效果)
 enter_transitions: true
@@ -865,6 +873,7 @@ mermaid:
     light: default
     dark: dark
 
+# 引导标注
 # Note (Bootstrap Callout)
 note:
   # Note tag style values:

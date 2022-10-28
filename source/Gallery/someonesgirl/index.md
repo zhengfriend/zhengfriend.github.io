@@ -1,7 +1,12 @@
 ---
-title: yanggirl
-date: 2022-10-28 09:21:58
+title: Someone's girl
+date: 2022-10-28 17:10:38
 ---
+
+
+{% note blue no-icon %}
+致敬！别人的女孩......
+{% endnote %}
 
 {% gallery %}
 ![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)
