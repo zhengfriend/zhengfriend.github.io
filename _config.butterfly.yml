@@ -1,3 +1,6 @@
+
+
+# 导航菜单
 # Main menu navigation (導航目錄)
 # see https://butterfly.js.org/posts/4aa8abbe/#導航菜單
 # --------------------------------------
@@ -25,10 +28,10 @@ menu:
   关于: /about/ || fas fa-heart
   
 
+# 代码配置
 # Code Blocks (代碼相關)
 # --------------------------------------
-
-highlight_theme: darker #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -44,12 +47,13 @@ copy:
     enable: true
     limit_count: 50
 
+# 社交图标
 # social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
 social:
   fab fa-qq: /img/qqqrcode.jpg || QQ
-  fab fa-weixin: /img/weixinqrcode.jpg || weixin
+  fab fa-weixin: /img/weixinqrcode.jpg || Weixin
   fab fa-github: https://github.com/zhengfriend || Github
   fas fa-envelope: mailto:zynmxk@sina.com || Email
 
@@ -102,37 +106,49 @@ katex:
 # Favicon（網站圖標）
 favicon: /img/favicon.png
 
+# 头像
 # Avatar (頭像)
 avatar:
   img: /img/avatar.jpg
-  # 不转圈
+  # 是否一直转圈
   effect: false
 
+# TODO:顶部图
+# 如果不要显示顶部图，可直接配置 disable_top_img: true
+# (tag_per_img 和 category_per_img )并不推荐为每个 tag 和每个 category 都配置不同的顶部图，因为配置太多会拖慢生成速度
 # Disable all banner image
 disable_top_img: false
 
+# 主页的top_img
 # The banner image of home page
-index_img: 
+# 可配置值：留空、图片链接、颜色（#0000FF/rgb(0,0,255)/orange/渐变色）、transparent(透明)、false
+index_img:
 
+# 默认的 top_img，当页面的 top_img 没有配置时，会显示 default_top_img
 # If the banner of page not setting, it will show the top_img
 default_top_img:
 
+# 归档页面的 top_img
 # The banner image of archive page
 archive_img:
 
+# tag 子页面 的 默认 top_img
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
 tag_img:
 
+# tag 子页面的 top_img，可配置每个 tag 的 top_img (不推荐)
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
 tag_per_img:
 
+# category 子页面 的 默认 top_img
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
 category_img:
 
+# category 子页面的 top_img，可配置每个 category 的 top_img(不推荐)
 # The banner image of category page
 # format:
 #  - category name: xxxxx
@@ -183,6 +199,7 @@ wordcount:
   min2read: true
   total_wordcount: true
 
+# 主页文章节选（自动节选和文章页description）
 # Display the article introduction on homepage
 # 1: description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
@@ -224,12 +241,12 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-    # - img: /img/wechat.jpg
-    #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
-    #   link:
-    #   text: alipay
+     - img: /img/wechat.jpg
+       link:
+       text: wechat
+     - img: /img/alipay.jpg
+       link:
+       text: alipay
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -694,28 +711,33 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/zhengfriend
+  #公告
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 阅读过程中如果遇到问题，可评论或者留言，看到了会第一时间回复，如果未收到回复也可加博主vx（申请时请备注），方便日后咨询，技术讨论等。
+  #最新文章
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
+  #分类
   card_categories:
     enable: true
     limit: 8 # if set 0 will show all
     expand: none # none/true/false
     sort_order: # Don't modify the setting unless you know how it works
+  #标签
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
     color: false
     sort_order: # Don't modify the setting unless you know how it works
+  #时间轴
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -723,6 +745,7 @@ aside:
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
+  #网站信息
   card_webinfo:
     enable: true
     post_count: true
