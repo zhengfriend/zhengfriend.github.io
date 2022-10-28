@@ -5,11 +5,11 @@
 #基础配置
 # Site
 #博客名
-title: Justin.Zheng的博客
+title: Justin.Zheng' Blog
 subtitle: ''
 #签名
 description: '万物皆有裂痕，那是光进来的地方。'
-keywords:
+keywords: java,电影,小说
 author: Justin.Zheng
 language: zh-CN
 timezone: 'Asia/Shanghai'
