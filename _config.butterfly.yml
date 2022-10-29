@@ -16,10 +16,13 @@ menu:
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
-# TODO添加搜索功能
+
+#see 图标icon： https://fontawesome.com/search?q=article&o=r
+
+# TODO: 添加搜索功能
 #  搜索: /search || fas fa-search
   首页: / || fas fa-home
-  文章|| fas fa-archive:
+  文章|| fas fa-book:
     归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open

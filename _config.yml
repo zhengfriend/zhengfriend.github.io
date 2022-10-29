@@ -154,4 +154,64 @@ live2d:
 #    title: 留言板
 #    comments: true
 
+
+# TODO:电影 需要配置豆瓣ID
+# 电影配置
+#douban:
+#  user: mythsman
+#  builtin: true
+#  book:
+#    title: 'This is my book title'
+#    quote: 'This is my book quote'
+#    meta: true
+#    comments: true
+#    top_img: https://cccccc.png
+#    aside: true
+#    path: books
+#    limit:
+#  movie:
+#    title: 'This is my movie title'
+#    quote: 'This is my movie quote'
+#    meta: true
+#    comments: true
+#    top_img: https://cccccc.png
+#    aside: true
+#    path: movies
+#    limit:
+#  game:
+#    title: 'This is my game title'
+#    quote: 'This is my game quote'
+#    meta: true
+#    comments: true
+#    top_img: https://cccccc.png
+#    aside: true
+#    path: games
+#    limit:
+#  timeout: 10000
+
+# 说说
+# TODO: 添加说说功能
+
+# Artitalk
+# see https://artitalk.js.org/
+# see https://github.com/jerryc127/butterfly-plugins/tree/main/hexo-butterfly-artitalk
+#artitalk:
+#  enable: true
+#  appId:
+#  appKey:
+#  path:
+#  js:
+#  option:
+#  front_matter:
+
+
+
+
+
+
+
+
+
+
+
   

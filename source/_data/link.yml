@@ -3,9 +3,9 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
-    - name: Justin.Zheng'
+    - name: Justin.Zheng' Bolg
       link: https://zhengfriend.github.io
-      # avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      avatar: https://zhengfriend.github.io/custom/source/img/avatar.jpg
       descr: 万物皆有裂痕，那是光进来的地方
 
 - class_name: 网站
