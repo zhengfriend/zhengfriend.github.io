@@ -16,13 +16,16 @@ menu:
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
    
+#  搜索: /search || fas fa-search
   首页: / || fas fa-home
   时间轴: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  文章|| fas fa-archive:
+    时间轴: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
   娱乐||fa fa-heartbeat:
 #    音乐: /music/ || fas fa-music
-    图库: /Gallery/ || fas fa-images
+    图库: /gallery/ || fas fa-images
 #    视频: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
   关于: /about/ || fas fa-heart
@@ -52,12 +55,12 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-qq: /img/qqqrcode.jpg || QQ
-  fab fa-weixin: /img/weixinqrcode.jpg || Weixin
+  fab fa-qq: /custom/source/img/qqqrcode.jpg || QQ
+  fab fa-weixin: /custom/source/img/weixinqrcode.jpg || Weixin
   fab fa-github: https://github.com/zhengfriend || Github
   fas fa-envelope: mailto:zynmxk@sina.com || Email
 
-#  fab fa-qq: https://zhengfriend.github.io/img/qqqrcode.jpg || qq
+#  fab fa-qq: https://zhengfriend.github.io/custom/source/img/qqqrcode.jpg || qq
 #  fab fa-weibo: https://weibo.com/yourname || weibo
 #  fab fa-google: https://plus.google.com/yurname || google
 #  fab fa-twitter: https://twitter.com/yurname || twitter
@@ -106,12 +109,12 @@ katex:
 
 # 网站图标
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /custom/source/img/favicon.png
 
 # 头像
 # Avatar (頭像)
 avatar:
-  img: /img/avatar.jpg
+  img: /custom/source/img/avatar.jpg
   # 是否一直转圈
   effect: false
 
@@ -124,11 +127,11 @@ disable_top_img: false
 # 主页的top_img
 # The banner image of home page
 # 可配置值：留空、图片链接、颜色（#0000FF/rgb(0,0,255)/orange/渐变色）、transparent(透明)、false
-index_img: /img/top_img2.jpg
+index_img: /custom/source/img/top_img2.jpg
 
 # 默认的 top_img，当页面的 top_img 没有配置时，会显示 default_top_img
 # If the banner of page not setting, it will show the top_img
-default_top_img: /img/top_img2.jpg
+default_top_img: /custom/source/img/top_img2.jpg
 
 # 归档页面的 top_img
 # The banner image of archive page
@@ -168,23 +171,23 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   # 默认封面图片
   default_cover:
-    - /img/fengjing/fengjing1.jpg
-    - /img/fengjing/fengjing2.jpg
-    - /img/fengjing/fengjing3.jpg
-    - /img/fengjing/fengjing4.jpg
-    - /img/fengjing/fengjing5.jpg
-    - /img/fengjing/fengjing6.jpg
-    - /img/heike/heike1.jpg
-    - /img/heike/heike2.jpg
-    - /img/heike/heike3.jpg
-    - /img/dongman/dongman1.jpg
-    - /img/dongman/dongman2.jpg
-    - /img/dongman/dongman3.jpg
+    - /custom/source/img/fengjing/fengjing1.jpg
+    - /custom/source/img/fengjing/fengjing2.jpg
+    - /custom/source/img/fengjing/fengjing3.jpg
+    - /custom/source/img/fengjing/fengjing4.jpg
+    - /custom/source/img/fengjing/fengjing5.jpg
+    - /custom/source/img/fengjing/fengjing6.jpg
+    - /custom/source/img/heike/heike1.jpg
+    - /custom/source/img/heike/heike2.jpg
+    - /custom/source/img/heike/heike3.jpg
+    - /custom/source/img/dongman/dongman1.jpg
+    - /custom/source/img/dongman/dongman2.jpg
+    - /custom/source/img/dongman/dongman3.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: /custom/source/img/friend_404.gif
+  post_page: /custom/source/img/404.jpg
 
 # A simple 404 page
 error_404:
@@ -261,10 +264,10 @@ post_copyright:
 reward:
   enable: true
   QR_code:
-     - img: /img/wechat.jpg
+     - img: /custom/source/img/wechat.jpg
        link:
        text: 微信
-     - img: /img/alipay.jpg
+     - img: /custom/source/img/alipay.jpg
        link:
        text: 支付宝
 
@@ -825,7 +828,7 @@ runtimeshow:
 # 最新评论
 # Aside widget - Newest Comments
 newest_comments:
-  enable: true
+  enable: false
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6 #显示的数量
   storage: 10 # unit: mins, save data to localStorage 缓存时间，分钟
