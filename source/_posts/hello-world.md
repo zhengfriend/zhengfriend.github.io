@@ -2,6 +2,7 @@
 
 title: Hello World
 date: 2022-10-27 16:17:41
+cover: /img/heike/heike1.jpg
 ---
 博客初步搭好了，祖传的Hello World必须要来一下吧。
 

@@ -124,7 +124,7 @@ disable_top_img: false
 # 主页的top_img
 # The banner image of home page
 # 可配置值：留空、图片链接、颜色（#0000FF/rgb(0,0,255)/orange/渐变色）、transparent(透明)、false
-index_img:
+index_img: /img/top_img2.jpg
 
 # 默认的 top_img，当页面的 top_img 没有配置时，会显示 default_top_img
 # If the banner of page not setting, it will show the top_img
@@ -168,8 +168,18 @@ cover:
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   # 默认封面图片
   default_cover:
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - /img/fengjing/fengjing1.jpg
+    - /img/fengjing/fengjing2.jpg
+    - /img/fengjing/fengjing3.jpg
+    - /img/fengjing/fengjing4.jpg
+    - /img/fengjing/fengjing5.jpg
+    - /img/fengjing/fengjing6.jpg
+    - /img/heike/heike1.jpg
+    - /img/heike/heike2.jpg
+    - /img/heike/heike3.jpg
+    - /img/dongman/dongman1.jpg
+    - /img/dongman/dongman2.jpg
+    - /img/dongman/dongman3.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -197,6 +207,7 @@ post_meta:
     tags: true # true or false 文章頁是否顯示標籤
     label: true # true or false 顯示描述性文字
 
+# TODO: 字数统计需要对接外部服务
 # wordcount (字數統計)
 # see https://butterfly.js.org/posts/ceeb73f/#字數統計
 wordcount:
@@ -295,7 +306,7 @@ noticeOutdate:
   message_prev: It has been
   message_next: days since the last update, the content of the article may be outdated.
 
-# 分享，需要对接外部服务商
+# TODO：分享，需要对接外部服务商
 # Share System (分享功能)
 # --------------------------------------
 
@@ -490,8 +501,8 @@ footer:
     enable: true
     # 博客年份
     since: 2022
-  #页脚自定义文本
-  custom_text: There is a crack in everything，that's how the light gets in.
+  #页脚自定义文本(支持HTML)
+  custom_text: There is a crack in everything，that's how the light gets in.<p>万物皆有裂痕，那是光进来的地方。</p><p><a target="_blank" href="https://hexo.io/"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&logo=hexo" title="博客框架为Hexo"></a>&nbsp;<a target="_blank" href="https://butterfly.js.org/"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&logo=bitdefender" title="主题采用butterfly"></a>&nbsp;<a target="_blank" href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-orange?style=flat&logo=jsDelivr" title="本站使用JsDelivr为静态资源提供CDN加速"></a> &nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Vervel-brightgreen?style=flat&logo=Vercel" title="本站采用双线部署，默认线路托管于Vercel"></a>&nbsp;<a target="_blank" href="https://vercel.com/ "><img src="https://img.shields.io/badge/Hosted-Coding-0cedbe?style=flat&logo=Codio" title="本站采用双线部署，联通线路托管于Coding"></a>&nbsp;<a target="_blank" href="https://github.com/"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&logo=GitHub" title="本站项目由Gtihub托管"></a>&nbsp;<a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&logo=Claris" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"></a></p>
   copyright: true # Copyright of theme and framework
 
 # Analysis
@@ -518,6 +529,7 @@ cloudflare_analytics:
 microsoft_clarity:
 
 # 广告
+# TODO: 广告需要接入外部系统
 # Advertisement
 # --------------------------------------
 
@@ -536,6 +548,7 @@ google_adsense:
 #   aside:
 #   post:
 
+# TODO：站长验证需要接入外部服务
 # Verification (站長驗證)
 # --------------------------------------
 
@@ -545,12 +558,14 @@ site_verification:
   # - name: baidu-site-verification
   #   content: xxxxxxx
 
+# 主题美化
 # Beautify/Effect (美化/效果)
 # --------------------------------------
 
 # Theme color for customize
 # Notice: color value must in double quotes like "#000" or may cause error!
 
+# 自定义主题色
 # theme_color:
 #   enable: true
 #   main: "#49B1F5"
@@ -582,13 +597,15 @@ index_top_img_height:
 category_ui: # 留空或 index
 tag_ui: # 留空或 index
 
+# 网站背景图
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: linear-gradient(90deg,rgba(247, 149, 51, 0.1) 0,rgba(243, 112, 85, 0.1) 15%,  rgba(239, 78, 123, 0.1) 30%,  rgba(161, 102, 171, 0.1) 44%,  rgba(80, 115, 184, 0.1) 58%,  rgba(16, 152, 173, 0.1) 72%, rgba(7, 179, 155, 0.1) 86%,rgba(109, 186, 130, 0.1) 100%  );
 
 # Footer Background
-footer_bg: false
+# footer 的背景会与 top_img 的一致，当设置 false 时，将与主题色一致。
+footer_bg: true
 
 # the position of bottom right button/default unit: px (右下角按鈕距離底部的距離/默認單位為px)
 rightside-bottom: 5px
@@ -596,6 +613,8 @@ rightside-bottom: 5px
 # Enter transitions (開啓網頁進入效果)
 enter_transitions: true
 
+
+# 背景特效
 # Background effects (背景特效)
 # --------------------------------------
 
@@ -627,7 +646,7 @@ canvas_nest:
 # Typewriter Effect (打字效果)
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
-  enable: false
+  enable: true
   colorful: true # open particle animation (冒光特效)
   shake: true #  open shake (抖動特效)
   mobile: false
@@ -794,11 +813,11 @@ runtimeshow:
   enable: true
   publish_date: 2022-10-25 00:00:00
 
+# TODO:开启最新评论,需要集成评论依赖
 # 最新评论
 # Aside widget - Newest Comments
 newest_comments:
-  # TODO:开启最新评论,需要集成评论依赖
-  enable: false
+  enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6 #显示的数量
   storage: 10 # unit: mins, save data to localStorage 缓存时间，分钟
@@ -831,7 +850,7 @@ readmode: true
 # 夜间模式
 # dark mode
 darkmode:
-  enable: true
+  enable: false
   # Toggle Button to switch dark/light mode
   button: true
   # Switch dark/light mode automatically (自動切換 dark mode和 light mode)
