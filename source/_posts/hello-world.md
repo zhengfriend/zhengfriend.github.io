@@ -1,9 +1,13 @@
 ---
 
-title: Hello World
+title: 博客还在魔改中啊啊啊
 date: 2022-10-27 16:17:41
 cover: /img/heike/heike1.jpg
 ---
+{% note no-icon %}
+博客还在主题魔改中......
+{% endnote %}
+
 博客初步搭好了，祖传的Hello World必须要来一下吧。
 
 ## Front-matter
