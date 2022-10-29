@@ -110,6 +110,13 @@ deploy:
   repo: git@github.com:zhengfriend/zhengfriend.github.io.git
   branch: main
 
+# 音乐插件关闭
+aplayer:
+  meting: true
+  asset_inject: false
+
+
+
 # 看板娘
 live2d:
   enable: true

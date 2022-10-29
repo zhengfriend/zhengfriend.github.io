@@ -15,16 +15,16 @@ menu:
   #   Movie: /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
-   
+
+# TODO添加搜索功能
 #  搜索: /search || fas fa-search
   首页: / || fas fa-home
-  时间轴: /archives/ || fas fa-archive
   文章|| fas fa-archive:
-    时间轴: /archives/ || fas fa-archive
+    归档: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
     分类: /categories/ || fas fa-folder-open
   娱乐||fa fa-heartbeat:
-#    音乐: /music/ || fas fa-music
+    音乐: /music/ || fas fa-music
     图库: /gallery/ || fas fa-images
 #    视频: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
@@ -927,14 +927,15 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
+# 开启主题aplayerInject
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 
@@ -1003,6 +1004,8 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
     # - <script src="xxxx"></script>
+    # 音乐插件
+    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work
