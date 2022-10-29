@@ -22,16 +22,27 @@ menu:
 # TODO: 添加搜索功能
 #  搜索: /search || fas fa-search
   首页: / || fas fa-home
-  文章|| fas fa-book:
-    归档: /archives/ || fas fa-archive
-    标签: /tags/ || fas fa-tags
-    分类: /categories/ || fas fa-folder-open
-  娱乐||fa fa-heartbeat:
-    音乐: /music/ || fas fa-music
-    图库: /gallery/ || fas fa-images
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+#  文章|| fas fa-book:
+#    归档: /archives/ || fas fa-archive
+#    标签: /tags/ || fas fa-tags
+#    分类: /categories/ || fas fa-folder-open
+  娱乐||fa fa-list:
+#   音乐: /music/ || fas fa-music
+    相册: /gallery/ || fas fa-camera-retro
+    番剧: /bangumis/ || fab fa-youtube
+
+#添加豆瓣插件后可以使用 电影、 书单、游戏
+#   电影: /movies/ || fas fa-video
+#   书单: /books/ || fas fa-book
+#   游戏: /games/ || fas fa-gamepad
+
+
 #    视频: /movies/ || fas fa-video
   友链: /link/ || fas fa-link
-  关于: /about/ || fas fa-heart
+  关于: /about/ || fas fa-heart card-announcement-animation
   
 
 # 代码配置
@@ -1005,6 +1016,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/custom/source/css/custom_title.css">
   bottom:
     # - <script src="xxxx"></script>
     # 音乐插件

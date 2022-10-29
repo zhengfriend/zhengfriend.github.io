@@ -1,8 +1,8 @@
 ---
-
 title: 博客还在魔改中啊啊啊
-date: 2022-10-27 16:17:41
 cover: /custom/source/img/heike/heike1.jpg
+abbrlink: 4ec176e2
+date: 2022-10-27 16:17:41
 ---
 {% note no-icon %}
 博客还在主题魔改中......

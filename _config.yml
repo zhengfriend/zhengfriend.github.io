@@ -8,7 +8,7 @@
 title: Justin.Zheng' Blog
 subtitle: ''
 #签名
-description: '万物皆有裂痕，那是光进来的地方'
+description: '经验丰富的JAVA程序猿，善于攻城'
 keywords: java,电影,小说
 author: Justin.Zheng
 language: zh-CN
@@ -17,7 +17,15 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://zhengfriend.github.io
-permalink: :year/:month/:day/:title/
+
+# 文章链接生成规则
+# permalink: :year/:month/:day/:title/
+permalink: articles/:abbrlink.html # articles为自定义前缀
+abbrlink:
+  alg: crc32   #算法： crc16(default) and crc32
+  rep: hex     #进制： dec(default) and hex
+
+
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
