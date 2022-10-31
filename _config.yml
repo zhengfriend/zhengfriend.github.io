@@ -20,7 +20,7 @@ url: https://zhengfriend.github.io
 
 # 文章链接生成规则
 # permalink: :year/:month/:day/:title/
-permalink: articles/:abbrlink.html # articles为自定义前缀
+permalink: articles/:abbrlink/ # articles为自定义前缀
 abbrlink:
   alg: crc32   #算法： crc16(default) and crc32
   rep: hex     #进制： dec(default) and hex
